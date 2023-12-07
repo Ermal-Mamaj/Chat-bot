@@ -1,3 +1,6 @@
-#chatbot
-print(55555)
-https://www.jetbrains.com/pycharm/download/download-thanks.html?platform=windows&code=PCC
+#Chat bot
+
+greetings = [ "HEllo","A u lodhe"]
+interduction = ["Hi my name is", "i am"]
+questons = ["How is the weather ","what is your name"]
+print("Hello")
