@@ -1,6 +1,58 @@
-#Chat bot
+import re
+import long_respond as long
 
-greetings = [ "HEllo","A u lodhe"]
-interduction = ["Hi my name is", "i am"]
-questons = ["How is the weather ","what is your name"]
-print("Hello")
+
+def message_probability(split_message, recognised_words, single_response = False, required_words=[]):
+    message_certainty = 0
+    has_required_words = True
+
+
+    for word in split_message:
+        print(1)
+        if word.lower() in recognised_words:
+            message_certainty += 1
+            print(2)
+    if not recognised_words:
+        return 0
+
+    percentage = message_certainty / len(recognised_words)
+
+    if required_words:
+        has_required_words = any(word.lower() in split_message for word in required_words)
+    for word in required_words:
+
+        if word.lower() not in split_message:
+            has_required_words = False
+            break
+
+    if has_required_words or single_response:
+        return int(percentage * 100)
+    else:
+        return 0
+
+def check_all_messages(split_message):
+    highest_probability_list={}
+
+    def response(bot_response,list_of_words,single_response=False,required_words=[]):
+        nonlocal highest_probability_list
+        highest_probability_list[bot_response] = message_probability(split_message, list_of_words, single_response, required_words)
+
+    response(long.R_pershendetje,["pershendetje","qkemi"],single_response = True)
+    response(long.R_SiJeni,["si ","jeni"],single_response=False,required_words = ["si"," jeni"])
+    response("pergjigjja",["fjalet","e","pyetjes"],required_words=["fjala kyqe e pyetjes"])
+
+    response(long.R_eating , ["what", "u", "eat"], required_words=["u","eat"])
+
+    best_match = max(highest_probability_list,key= highest_probability_list.get)
+
+    return long.unknown() if highest_probability_list[best_match] < 1 else best_match
+
+
+def get_response(user_input):
+    split_message = re.split(r"\s+|[,.;?!-]\s*", user_input.lower())
+    response = check_all_messages(split_message)
+
+    return response
+
+while True:
+    print("Bot: " + get_response(input("You:")))
