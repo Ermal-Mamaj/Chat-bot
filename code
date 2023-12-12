@@ -30,11 +30,17 @@ def check_all_messages(split_message):
         highest_probability_list[bot_response] = message_probability(split_message, list_of_words, single_response, required_words)
 
     response(long.A_pershendetje,["pershendetje","qkemi"],single_response = True)
-    response(long.A_SiJeni,["si ","jeni","je","kalon",'kaloni'],required_words = ["si"," jeni"])
-    response(long.A_Bugga,['A','njeh','Bugga','Buggen'] , required_words=['njeh', 'Bugga'])
-    response(long.A_diqkaInteresant,['interesant','diqka','trego'] , required_words=['trego', 'interesant'])
+    response(long.A_prezantimi,["qysh","quheni","emrin"],required_words =["emri","emrin"])
     response(long.A_mirmengjes, ['mirmengjes' ], required_words=['mirmengjes'])
     response(long.A_mirdita, ['mirdita'], required_words=['mirdita'])
+    response(long.A_mirmrama, ['miremrama',"mirembrema",'mirmrama'], required_words=['miremrama','mirmrama','mirembrema'])
+    response(long.A_diqkaInteresant,['interesant','diqka','trego'] , required_words=['trego', 'interesant'])
+    response(long.A_aftesit, ['aftesit',"qka",'mund','te','beni','afte' ], required_words=['aftesit','beni','i afte'])
+    response(long.A_filem, ['filem','ju','pelqen','filmi','film','filma'],required_words=["filem",'film','filmi','filma'])
+    response(long.A_serial, ['serial', 'ju', 'pelqen', 'seriale','seriali'],required_words=["serial", 'seriale','seriali'])
+
+    response(long.A_SiJeni,["si ","jeni","je","kalon",'kaloni'],required_words = ["si"," jeni"])
+    response(long.A_Bugga,['A','njeh','Bugga','Buggen'] , required_words=['njeh', 'Bugga'])
     response(long.A_Kaprolli, ['njeh','kaprrollin'], required_words=['kaprrollin'])
     response(long.A_Libra, ['libri','libra','qfar'], required_words=['libri','libra','librat]
     response(long.A_Muzik, ['Muzik','Këng','Muzika,'Qfar'], required_words=['Muzik','Muzika','Këng']
