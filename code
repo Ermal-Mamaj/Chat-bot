@@ -9,8 +9,6 @@ def message_probability(split_message, recognised_words, single_response=False, 
     for word in split_message:
         if word in recognised_words:
             message_certainty += 1
-
-
         if required_words and word.lower() in required_words:
             has_required_words = True
 
@@ -32,8 +30,13 @@ def check_all_messages(split_message):
         highest_probability_list[bot_response] = message_probability(split_message, list_of_words, single_response, required_words)
 
     response(long.A_pershendetje,["pershendetje","qkemi"],single_response = True)
-    response(long.A_SiJeni,["si ","jeni","je","kalon"],required_words = ["si"," jeni"])
+    response(long.A_SiJeni,["si ","jeni","je","kalon",'kaloni'],required_words = ["si"," jeni"])
     response(long.A_Bugga,['A','njeh','Bugga','Buggen'] , required_words=['njeh', 'Bugga'])
+    response(long.A_diqkaInteresant,['interesant','diqka','trego'] , required_words=['trego', 'interesant'])
+    response(long.A_mirmengjes, ['mirmengjes' ], required_words=['mirmengjes'])
+    response(long.A_mirdita, ['mirdita'], required_words=['mirdita'])
+    response(long.A_Kaprolli, ['njeh','kaprrollin'], required_words=['kaprrollin'])
+
 
 
 
@@ -48,5 +51,12 @@ def get_response(user_input):
     response = check_all_messages(split_message)
     return response
 
+
+print("   ______________________")
+print(" /                       \\")
+print("|   Welcome to ChatBot!   |")
+print("|    How can I help?      |")
+print(" \\______________________ /")
 while True:
-    print("Bot: " + get_response(input("You:")))
+
+    print("Bot: " + get_response(input("\n\nYou:")))
