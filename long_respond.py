@@ -8,8 +8,6 @@ A_mirmrama = 'Mirëmbrëma, shpresoj që dita juaj ka shkuar sa më mirë të je
 A_diqkaInteresant = 'Kur nuk të donë familja joteeee , , nuk të don as Kojshia'
 A_Bugga = "E ngjo , pe lujeke fort CS Go-ne"
 A_Kaprolli = 'Po mar qysh se ngjo Dionis Currin'
-A_Libra = 'Po, libri Hamlet nga William Shkekspire'
-A_Muzik = 'Në bazë të zhanrit që preferoni, unë mund të ju rekumandoj:\n Hip-Hop -> 50 cent & Lil Wayne \n Balad-> The Weeknd \n Rap -> Eminem & Kendrick Lemar'
 A_Libra = 'Unë do ju sugjeroja librin Hamlet nga William Shkekspire'
 A_Muzik = 'Në bazë të zhanrit që preferoni, unë mund të ju rekumandoj:\n Hip-Hop -> 50 cent & Lil Wayne \n Balad-> The Weeknd \n Rap -> Eminem & Kendrick Lemar'
 
