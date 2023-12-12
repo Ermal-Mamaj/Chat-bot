@@ -12,7 +12,7 @@ A_mirmrama = 'Mirëmbrëma, shpresoj që dita juaj ka shkuar sa më mirë të je
 A_serial = "Ndër serialet më të shikuar dhe më të rekomanduar në botë janë: 'Game of Thrones','La Casa De Papel','Prison Breake'"
 local_time = time.localtime(time.time())
 A_koha = 'Ora tani është'+time.strftime(" %H:%M:%S",local_time).__str__()
-A_data = 'Data sot është' time.strftime("%d-%m-%Y" ,local_time).__str__()
+A_data = 'Data sot është'+time.strftime("%d-%m-%Y" ,local_time).__str__()
 
 
 
