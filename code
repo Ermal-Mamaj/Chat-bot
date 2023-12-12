@@ -38,6 +38,8 @@ def check_all_messages(split_message):
     response(long.A_aftesit, ['aftesit',"qka",'mund','te','beni','afte' ], required_words=['aftesit','beni','i afte'])
     response(long.A_filem, ['filem','ju','pelqen','filmi','film','filma'],required_words=["filem",'film','filmi','filma'])
     response(long.A_serial, ['serial', 'ju', 'pelqen', 'seriale','seriali'],required_words=["serial", 'seriale','seriali'])
+    response(long.A_koha,['koha','ora'],required_words=['ora','koha'])
+    response(long.A_data,['data'],required_words=['data'])
 
     response(long.A_SiJeni,["si ","jeni","je","kalon",'kaloni'],required_words = ["si"," jeni"])
     response(long.A_Bugga,['A','njeh','Bugga','Buggen'] , required_words=['njeh', 'Bugga'])
