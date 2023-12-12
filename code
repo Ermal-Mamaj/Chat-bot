@@ -36,8 +36,8 @@ def check_all_messages(split_message):
     response(long.A_mirmengjes, ['mirmengjes' ], required_words=['mirmengjes'])
     response(long.A_mirdita, ['mirdita'], required_words=['mirdita'])
     response(long.A_Kaprolli, ['njeh','kaprrollin'], required_words=['kaprrollin'])
-
-
+    response(long.A_Libra, ['libri','libra','qfar'], required_words=['libri','libra','librat]
+    response(long.A_Muzik, ['Muzik','Këng','Muzika,'Qfar'], required_words=['Muzik','Muzika','Këng']
 
 
 
