@@ -44,8 +44,8 @@ def check_all_messages(split_message):
     response(long.A_SiJeni,["si ","jeni","je","kalon",'kaloni'],required_words = ["si"," jeni"])
     response(long.A_Bugga,['A','njeh','Bugga','Buggen'] , required_words=['njeh', 'Bugga'])
     response(long.A_Kaprolli, ['njeh','kaprrollin'], required_words=['kaprrollin'])
-    response(long.A_Libra, ['libri','libra','qfar'], required_words=['libri','libra','librat]
-    response(long.A_Muzik, ['Muzik','Këng','Muzika,'Qfar'], required_words=['Muzik','Muzika','Këng']
+    response(long.A_Libra, ['libri','libra','qfar'], required_words=['libri','libra','librat'])
+    response(long.A_Muzik, ['Muzik','Këng','Muzika','Qfar'], required_words=['Muzik','Muzika','Këng'])
 
 
 

@@ -11,8 +11,8 @@ A_mirdita = 'Mirëdita , shpresoj që dita juaj po shkonë sa më mirë që të 
 A_mirmrama = 'Mirëmbrëma, shpresoj që dita juaj ka shkuar sa më mirë të jetë e mundur'
 A_serial = "Ndër serialet më të shikuar dhe më të rekomanduar në botë janë: 'Game of Thrones','La Casa De Papel','Prison Breake'"
 local_time = time.localtime(time.time())
-A_koha = time.strftime(" %H:%M:%S",local_time).__str__()
-A_data = time.strftime("%Y-%m-%d" ,local_time).__str__()
+A_koha = 'Ora tani është'+time.strftime(" %H:%M:%S",local_time).__str__()
+A_data = 'Data sot është' time.strftime("%d-%m-%Y" ,local_time).__str__()
 
 
 
