@@ -25,11 +25,11 @@ response_counter = 0
 def unknown():
     global response_counter
     response_counter += 1
-    if response_counter > 3:
+    if response_counter > 2:
         return "Kërkoj falje por unë nuk e di përgjigjjen e kësaj pyetje"
-    response = ["Shko mytu",
-                "Shko mytu",
-                "Shko mytu",
-                "Shko mytu"][random.randrange(4)]
+    response = ["Nuk po e kuptoj qfar doni të thoni",
+                "A mund ta përsërisni edhe një herë ",
+                "Kontrolloni nëse pyetja është e shkruar saktë",
+                ][random.randrange(3)]
 
     return response

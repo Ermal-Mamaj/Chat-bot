@@ -40,10 +40,7 @@ def check_all_messages(split_message):
     response(long.A_serial, ['serial', 'ju', 'pelqen', 'seriale','seriali'],required_words=["serial", 'seriale','seriali'])
     response(long.A_koha,['koha','ora'],required_words=['ora','koha'])
     response(long.A_data,['data'],required_words=['data'])
-
     response(long.A_SiJeni,["si ","jeni","je","kalon",'kaloni'],required_words = ["si"," jeni"])
-    
-    
     response(long.A_Libra, ['libri','libra','qfar'], required_words=['libri','libra','librat'])
     response(long.A_Muzik, ['Muzik','Këng','Muzika','Qfar'], required_words=['Muzik','Muzika','Këng'])
 
