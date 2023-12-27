@@ -6,14 +6,14 @@ def message_probability(split_message, recognised_words, single_response=False, 
     message_certainty = 0
     has_required_words = True
 
+    if not recognised_words:
+        return 0
+
     for word in split_message:
         if word in recognised_words:
             message_certainty += 1
         if required_words and word.lower() in required_words:
             has_required_words = True
-
-    if not recognised_words:
-        return 0
 
     percentage = message_certainty / len(recognised_words)
 
